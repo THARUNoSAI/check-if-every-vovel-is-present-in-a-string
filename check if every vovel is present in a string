@@ -1,0 +1,15 @@
+def check(string) :
+    string = string.lower()
+    v = set("aeiou")
+    s = set()
+    for i in string :
+        if i in v :
+            s.add(i)
+        else:
+            pass
+    if len(s) == len(v) :
+        print("every vovel is present in string")
+    else:
+        print("every vovel is not present in string")
+string = str(input())
+check(string)
